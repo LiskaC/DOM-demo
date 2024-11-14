@@ -1,0 +1,10 @@
+.day {
+  background-color: aquamarine;
+  padding: 50px;
+}
+
+.day-title {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  color: blue;
+}
