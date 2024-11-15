@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pizza Delivery</title>
+    <link rel="stylesheet" href=""/>
+  </head>
+  <body>
+    <form id="personal-details">
+      <label>
+        Desired pizza:
+        <select name="pizza" placeholder="Select your pizza" required>
+          <option value="margherita">Margherita</option>
+          <option value="big-meat">Big Meat</option>
+          <option value="vegetariana">Vegetariana</option>
+          <option value="cheesy">Cheesy</option>
+        </select>
+      </label>
+      <label>
+        Number of pizzas:
+        <input type="number" name="number" required>
+      </label>
+      <label>
+        Size:
+        <select name="size" required>
+          <option value="13">13 inch</option>
+          <option value="15">15 inch</option>
+          <option value="17">17 inch</option>
+          <option value="19">19 inch</option>
+        </select>
+      </label>
+      <label>
+        Additional dietary requirements:
+        <input type="textarea" name="requirements">
+      </label>
+      <button type="submit">Update</button>
+    </form>
+    <div>
+      <h2>Your order:</h2>
+      <div>
+        <p>Type:</p>
+        <p id="order-pizza"></p>
+      </div>
+      <div>
+        <p>Number:</p>
+        <p id="order-number"></p>
+      </div>
+      <div>
+        <p>Size:</p>
+        <p id="order-size"></p>
+      </div>
+      <div>
+        <p>Additional requirements:</p>
+        <p id="order-requirements"></p>
+      </div>
+    </div>
+
+  </body>
+  <script src="pizza-order.js"></script>
+</html>
