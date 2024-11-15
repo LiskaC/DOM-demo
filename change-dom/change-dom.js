@@ -1,6 +1,6 @@
 // select a single element (by 'id' -> use # symbol before id name)
 // this would find, for example an element like this: '<div id="paragraphs">....</div>'
-const paragraphsBox = document.querySelector('#paragraphs')
+const paragraphsBox = document.querySelector('#paragraphs');
 
 /**
  * Function to add a paragraph to the list of paragraphs
@@ -12,7 +12,7 @@ function addParagraph() {
   // remember, this '=' is an assignment operator (it sets a new value for the thing on the left)
   newParagraph.textContent = 'I\'m another paragraph';
   // add it as the last child to the div with id 'paragraphs'
-  paragraphsBox.appendChild(newParagraph)
+  paragraphsBox.appendChild(newParagraph);
   // !if you want to insert at a specific position, you have to use `.insertBefore(newParagraph, paragraphsBox.children[0])`
   // change the `[0]` value to whatever position in the parent element you want the child to appear at. Try playing around with this.
   // https://www.w3schools.com/jsref/met_node_insertbefore.asp
@@ -22,11 +22,11 @@ function addParagraph() {
  * Removes the last paragraph
  */
 function removeParagraph() {
-  paragraphsBox.removeChild(paragraphsBox.lastChild)
+  paragraphsBox.removeChild(paragraphsBox.lastChild);
 }
 
 // select all elements with a given class name (use '.' symbol before class name)
-const boxes = document.querySelectorAll('.box')
+const boxes = document.querySelectorAll('.box');
 
 /**
  * Function to change the color of the box element
